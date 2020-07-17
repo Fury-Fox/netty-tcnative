@@ -263,6 +263,7 @@
                 <echo message="Setting SSL_INCLUDE_DIRS=${sslIncludeDirsWindowsPath}" />
                 <echo message="Setting SSL_LIB_DIRS=${sslLibDirsWindowsPath}" />
                 <echo message="Setting SSL_LIBS=${msvcSslLibs}" />
+                <echo message="Setting NATIVE_LIB_NAME=${nativeLibName}" />
 
                 <!-- Copy and filter the template MSVC project -->
                 <filter token="APR_INCLUDE_DIR" value="${aprIncludeDir}" />
@@ -270,6 +271,7 @@
                 <filter token="SSL_INCLUDE_DIRS" value="${sslIncludeDirsWindowsPath}" />
                 <filter token="SSL_LIB_DIR" value="${sslLibDirsWindowsPath}" />
                 <filter token="SSL_LIBS" value="${msvcSslLibs}" />
+                <filter token="NATIVE_LIB_NAME" value="${nativeLibName}" />
                 <copy file="${vsStaticTemplateFile}" tofile="${generatedSourcesDir}/native-package/vs2010.vcxproj" filtering="true" overwrite="true" verbose="true" />
               </target>
             </configuration>

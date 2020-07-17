@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>netty_tcnative</ProjectName>
+    <ProjectName>$(NATIVE_LIB_NAME)</ProjectName>
     <RootNamespace>netty_tcnative</RootNamespace>
     <ProjectGuid>{42EB387C-0D16-471E-8859-C2CF31F8094D}</ProjectGuid>
   </PropertyGroup>
